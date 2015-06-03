@@ -1,7 +1,7 @@
 library(readr)
 library(rjson)
 
-test <- read_csv("input/test.csv")
+test <- read_csv("../input/test.csv")
 mean_train_time <- 660
 positions <- function(row) as.data.frame(do.call(rbind, fromJSON(row$POLYLINE)))
 
